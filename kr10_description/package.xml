@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>kuka_kr10_support</name>
-  <version>0.1.0</version>
+  <name>kr10_description</name>
+  <version>0.0.0</version>
   <description>
     <p>
       ROS-Industrial support for the KUKA KR 10 (and variants).
@@ -28,8 +28,8 @@
       robot model and configuration you intend to use them with.
     </p>
   </description>
-  <author email="schindlbeck@imr.uni-hannover.de">Christopher Schindlbeck (University of Hanover)</author>
-  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <author email="linzhank@gmail.com">LinZHank</author>
+  <maintainer email="linzhank@gmail.com">LinZHank</maintainer>
   <license>BSD</license>
 
   <url type="website">http://wiki.ros.org/kuka_kr10_support</url>
@@ -38,14 +38,9 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <test_depend>roslaunch</test_depend>
-
-  <exec_depend>industrial_robot_client</exec_depend>
-  <exec_depend>joint_state_publisher</exec_depend>
-  <exec_depend>kuka_resources</exec_depend>
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>rviz</exec_depend>
-  <exec_depend>xacro</exec_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
 
   <export>
     <architecture_independent/>
