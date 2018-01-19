@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro">
-  <xacro:include filename="$(find kuka_resources)/urdf/common_constants.xacro"/>
-  <xacro:include filename="$(find kuka_resources)/urdf/common_materials.xacro"/>
+<!-- 6DOF Manipulator -->
+<robot name="r1100sixx" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find kr10_description)/urdf/r1100sixx.gazebo"/>
+    <!-- Import Rviz colors -->
+  <xacro:include filename="$(find kr10_description)/urdf/materials.xacro" />
 
   <xacro:macro name="kuka_kr10r1100sixx" params="prefix">
     <link name="${prefix}base_link">
